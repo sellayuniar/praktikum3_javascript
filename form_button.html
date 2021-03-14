@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> Objek document </title>
+</head>
+<body>
+	<script language="Javascript">
+
+	//<!-
+	function ubahWarnaLB(warna) {
+		document.bgColor = warna; // document.bgColor memiliki nilai sama dengan variabel warna
+	}
+	function ubahWarnaLD(warna) {
+		document.fgColor = warna; // // document.fgColor memiliki nilai sama dengan variabel warna
+	}
+	//->
+</script>
+<H1> TES </H1>
+<FORM>
+	<input type="Button" value="Latar Belakang Hijau" onclick="ubahWarnaLB('green')" > <!--membuat input type button dan ketika di klik akan memanggil fungsi ubahWarnaLB('green') -->
+	<input type="Button" value="Latar Belakang Putih" onclick="ubahWarnaLB('white')" > <!--membuat input type button dan ketika di klik akan memanggil fungsi ubahWarnaLB('white') -->
+	<input type="Button" value="Teks Kuning" onclick="ubahWarnaLD('Yellow')" > <!--membuat input type button dan ketika di klik akan memanggil fungsi ubahWarnaLD('blue') -->
+	<input type="Button" value="Teks Biru" onclick="ubahWarnaLD('blue')" > <!--membuat input type button dan ketika di klik akan memanggil fungsi ubahWarnaLD('blue') -->
+	
+</FORM>
+</body>
+</html>

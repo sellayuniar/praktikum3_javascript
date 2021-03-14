@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title> Konversi Nilai Angka Menjadi Nilai Huruf </title>
+</head>
+<script language="Javascript">
+
+		var nilai = prompt("Masukan Nilai (0-100): ") //membuat variable nilai yang menyimpan data prompt yang memiliki teks Masukan Nilai (0-100: )
+		var hasil = "" //membuat variabel hasil
+		if (nilai>= 0 && nilai<=40) {
+			hasil="E"
+		} // jika nilai lebih dari 0 dan kurang dari 40 maka hasil E
+		else if (nilai>=41 && nilai<=55) {
+			hasil="D"
+		} // jika tidak nilai lebih dari 41 dan kurang dari 55 maka hasil D
+		else if (nilai>=56 && nilai<=60) {
+			hasil="C"
+		} // jika tidak nilai lebih dari 56 dan kurang dari 60 maka hasil C
+		else if (nilai>=61 && nilai<=65) {
+			hasil="BC"
+		} // jika tidak nilai lebih dari 61 dan kurang dari 65 maka hasil BC
+		else if (nilai>=66 && nilai<=70) {
+			hasil="B"
+		} // jika tidak nilai lebih dari 66 dan kurang dari 70 maka hasil B
+		else if (nilai>=71 && nilai<=80) {
+			hasil="AB"
+		} // jika tidak nilai lebih dari 71 dan kurang dari 80 maka hasil AB
+		else {
+			hasil="A"
+		} // jika tidak maka hasil A
+		document.write("Hasil Konversi Nilai :" + hasil ); // print Hasil koversi Nilai: dan nilai variabel hasil
+	
+</script>
+<body>
+</body>
+</html>
+

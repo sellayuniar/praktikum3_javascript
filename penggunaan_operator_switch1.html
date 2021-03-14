@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Contoh Program Javascript </title>
+</head>
+<SCRIPT language="Javascript">
+function test ()
+
+{
+	val1=window.prompt("Input Nilai (1-5):") // variable val1 menyimpan data window prompt dengan isi teks Input Nilai (1-5):
+	switch (val1) // membuat switch memanggil variabel val1
+{
+	case "1" : // membuat case 1
+	document.write("bilangan satu") // print bilangan satu
+	break
+
+	case "2" : // membuat case 2
+	document.write("bilangan dua") // print bilangan dua
+	break
+
+	case "3" : // membuat case 3
+	document.write("bilangan tiga") // print bilangan tiga
+	break
+
+	case "4" : // membuat case 4
+	document.write("bilangan empat") // print bilangan empat
+	break
+
+	case "5" : //membuat case 5
+	document.write("bilangan lima") // print bilangan lima
+	break
+
+	default : // default
+	document.write("bilangan lainnya") // print bilangan lainnya
+}
+}
+</SCRIPT>
+<body>
+	<input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>

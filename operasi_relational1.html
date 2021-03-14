@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title> Contoh Program Javascript </title>
+</head>
+<SCRIPT language="Javascript">
+function test () {
+	val1=window.prompt("Nilai I:") // print nilai I di window prompt
+	val2=window.prompt("Nilai II:") // print nilai II di window prompt
+	document.write("<br>"+"val1==val2"+"<br>") // print val1==val2
+	document.write(val1==val2) // print hasil val1==val2
+	document.write("<br>"+"val1!=val2"+"<br>") // print val1!=val2
+	document.write(val1!=val2) // print hasil val1!=val2
+	document.write("<br>"+"val1&gtval2"+"<br>") // print val1>val2
+	document.write(val1>val2) // print hasil val1>val2
+	document.write("<br>"+"val1&ltval2"+"<br>") // print val1<val2
+	document.write(val1<val2) // print hasil print val1<val2
+}
+
+</SCRIPT>
+<body>
+	<input type="button" name="button1" value="relational" onclick=test()> <!--membuat input type button dan ketika diklik akan memanggil funcion test -->
+</body>
+</html>

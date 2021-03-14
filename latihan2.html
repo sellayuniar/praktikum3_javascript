@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title> Konversi Nilai Angka Menjadi Nilai Huruf </title>
+	<style type="text/css">
+  .tombol{
+   background-color: deepskyblue; 
+  } /*/ membuat class tombol dengan poperty background-color warna biru*/
+  .tabel{
+   background-color: gold;
+   margin: 10px;
+   padding: 10px;
+  }
+  /*/ membuat class tabel dengan poperty background-color warna emas, margin 10px dan padding 10px */
+ </style>
+</head>
+<script language="Javascript">
+	function perkalian() {
+		var bil1=parseFloat(document.calculator.t1.value); //membuat variabel bil1 yang menyimpan nilai dari input type text t1
+		var bil2=parseFloat(document.calculator.t2.value); //membuat variabel bil2 yang menyimpan nilai dari input type text t2
+		var hasil=bil1*bil2;//membuat var hasil yang menyimpan nilai hasil perkalian bil1 dan bil2
+		document.calculator.t3.value = hasil //print ke t3 sama dengan nilai variabel hasil
+	}
+	function pembagian() {
+		var bil1=parseFloat(document.calculator.t1.value);//membuat variabel bil1 yang menyimpan nilai dari input type text t1
+		var bil2=parseFloat(document.calculator.t2.value);//membuat variabel bil2 yang menyimpan nilai dari input type text t2
+		var hasil=bil1/bil2;//membuat var hasil yang menyimpan nilai hasil pembagian bil1 dan bil2
+		document.calculator.t3.value = hasil//print ke t3 sama dengan nilai variabel hasil
+	}
+	function tambah() {
+		var bil1=parseFloat(document.calculator.t1.value);//membuat variabel bil1 yang menyimpan nilai dari input type text t1
+		var bil2=parseFloat(document.calculator.t2.value);//membuat variabel bil2 yang menyimpan nilai dari input type text t2
+		var hasil=bil1+bil2;//membuat var hasil yang menyimpan nilai hasil tambah bil1 dan bil2
+		document.calculator.t3.value = hasil//print ke t3 sama dengan nilai variabel hasil
+	}
+	function kurang() {
+		var bil1=parseFloat(document.calculator.t1.value);//membuat variabel bil1 yang menyimpan nilai dari input type text t1
+		var bil2=parseFloat(document.calculator.t2.value);//membuat variabel bil2 yang menyimpan nilai dari input type text t2
+		var hasil=bil1-bil2;//membuat var hasil yang menyimpan nilai hasil kurang bil1 dan bil2
+		document.calculator.t3.value = hasil//print ke t3 sama dengan nilai variabel hasil
+	}
+
+</script>
+<body>
+	<form name="calculator"> <!-- -->
+	<table style="background-color: " class="tabel" align="center"> <!-- membuat tabel-->
+   <caption>Calculator</caption>
+   <tr>
+    <td>Bilangan 1</td><td>:</td><td><input type="number" name="t1"></td> <!-- membuat baris pada tabel yang berisi teks bilangan 1 dengan input type number -->
+   </tr>
+   <tr>
+    <td>Bilangan 2</td><td>:</td><td><input type="number" name="t2"></td> <!--membuat baris pada tabel yang berisi teks bilangan 2 dengan input type number -->
+   </tr>
+   <tr>
+    <td>Hasil</td><td>:</td><td><input type="number" name="t3"></td> <!--membuat baris pada tabel yang berisi teks hasil dengan input type number -->
+   </tr>
+   <tr>
+    <td colspan="3" align="center">
+    <div class=tombol> <!--memanggil class tombol-->
+    <input type="button" name="b1" value="X" onclick=perkalian()> <!--membuat button X -->
+	<input type="button" name="b2" value="/" onclick=pembagian()> <!--membuat button / -->
+	<input type="button" name="b3" value="+" onclick=tambah()> <!--membuat button + -->
+	<input type="button" name="b4" value="-" onclick=kurang()>  <!--membuat button - -->
+    </td>
+   </tr>
+  </table>
+	
+</form>
+</body>
+</html>
+
+
